@@ -34,10 +34,10 @@ def get_data(city, user_id, message):
     
     except ConnectTimeout as ex:
         print(ex)
-        return 'Ощибка сервиса. Попробуйте ещё раз'
+        return 'Ошибка сервиса. Попробуйте ещё раз'
     
     except ReadTimeout as ex:
-        return 'Ощибка сервиса. Попробуйте позже'
+        return 'Ошибка сервиса. Попробуйте позже'
     
     except Exception as ex:
         return f'Проверь введеные данные'
